@@ -297,9 +297,6 @@ C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\o
 C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.TagHelpers.input.cache
 C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.TagHelpers.output.cache
 C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.RazorCoreGenerate.cache
-C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs
-C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
-C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header.cshtml.g.cs
 C:\Users\rachn\source\repos\RachnaSharma20\TaskdonebyRachna\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
