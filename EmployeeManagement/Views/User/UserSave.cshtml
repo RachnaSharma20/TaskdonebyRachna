@@ -1,0 +1,44 @@
+﻿@model UserModel
+@{
+    Layout = "_NewLayout";
+}
+
+<h2>Add User</h2>
+@if (ViewBag.Messages != null)
+{
+    <div class="alert-success">
+        @ViewBag.Message.ToString()
+    </div>
+}
+@using (Html.BeginForm("UserSave", "User", FormMethod.Post))
+{
+    <div class="row">
+        <div class="form-group col col-4">
+            <label for="email">Name:</label>
+            @Html.TextBox("Name", null, new { @class = "form-control", @placeholder="Please Enter Name"})
+            @Html.ValidationMessage("Name")
+        </div>
+        <div class="form-group col col-4">
+            <label>Email:</label>
+            @Html.TextBox("Email", null, new { @class = "form-control", type = "email", @placeholder = "Please Enter Email" })
+            @Html.ValidationMessage("Email")
+        </div>
+        <div class="form-group col col-4">
+            <label>Password:</label>
+            @Html.Password("Password", null, new { @class = "form-control", @placeholder = "Please Enter Password" })
+            @Html.ValidationMessage("Password")
+        </div>
+    </div>
+    <div class="row" style="float:right;">
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </div>
+        
+    
+}
+
+
+
+<div id="userListContainer">
+    @await Html.PartialAsync("_UserList", ViewData["users"] as List<UserModel>)
+</div>
+

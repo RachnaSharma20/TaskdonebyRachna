@@ -1,0 +1,11 @@
+﻿@model UserViewModel
+@{
+    Layout = "_NewLayout";
+}
+
+<h2>User List</h2>
+<p>@ViewBag.Message</p>
+
+<div id="userListContainer">
+    @await Html.PartialAsync("_UserList", Model.Users)
+</div>

@@ -1,0 +1,21 @@
+﻿<h2>User Details</h2>
+
+<p><strong>Session Data:</strong> <span id="sessionData"></span></p>
+<p><strong>Cookie Data:</strong> <span id="cookieData"></span></p>
+
+<button onclick="fetchSession()">Get Session Data</button>
+<button onclick="fetchCookie()">Get Cookie Data</button>
+
+<script>
+    function fetchSession() {
+        fetch('/User/GetSession')
+            .then(response => response.text())
+            .then(data => document.getElementById("sessionData").innerText = data);
+    }
+
+    function fetchCookie() {
+        fetch('/User/GetCookie')
+            .then(response => response.text())
+            .then(data => document.getElementById("cookieData").innerText = data);
+    }
+</script>

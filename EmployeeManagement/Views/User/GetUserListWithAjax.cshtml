@@ -1,0 +1,35 @@
+﻿<!-- User List -->
+
+    <table class="table table-hover">
+
+            <thead class="thead-dark item">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- Data will be inserted here -->
+            </tbody>
+    </table>
+
+
+
+
+<!-- AJAX Script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // 🔹 Load Users on Page Load
+        function loadUsers() {
+            $.get("/User/GetUsersFromJson", function (data) {
+                $("#userTableBody").empty();
+                data.forEach(user => {
+                    $("#userTableBody").append(`<tr><td>${user.name}</td><td>${user.email}</td></tr>`);
+                });
+            });
+        }
+        loadUsers(); // Initial Load
+
+    });
+</script>
